@@ -23,25 +23,7 @@ public class GUI extends JFrame{
         radio_1.setSelected(true);
         container.add(radio_2);
         container.add(radio_3);
-        button_1.addAncestorListener(new ButtonEventListener());
         container.add(button_1);
     }
-    class ButtonEventListener implements ActionListener{
-        ButtonEventListener(){
-            this.actionPerformed();
-        }
 
-        public void actionPerformed (ActionEvent e){
-            String message = "";
-            if(radio_1.isSelected()){
-                message += "xml";
-            }else if(radio_2.isSelected()){
-                message += "txt";
-            }else{
-                message += "json";
-            }
-            JOptionPane.showMessageDialog(null, message, "Output", JOptionPane.PLAIN_MESSAGE);
-        }
-
-    }
 }
