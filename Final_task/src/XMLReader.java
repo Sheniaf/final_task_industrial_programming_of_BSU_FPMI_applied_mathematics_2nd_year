@@ -11,7 +11,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class XMLReader {
-public String reader(String filename, String tagname) throws ParserConfigurationException, IOException, SAXException {
+public static String reader(String filename, String tagname) throws ParserConfigurationException, IOException, SAXException {
     String str = "";
     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
     DocumentBuilder builder = factory.newDocumentBuilder();
