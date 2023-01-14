@@ -43,9 +43,8 @@ public class Programm {
         XMLReader xmlReader = new XMLReader();
         str = xmlReader.reader("Final_task/src/input.xml","String");
     } else if (read == 3) {
-           /* JSONReader jsonReader = new JSONReader();
+           JSONReader jsonReader = new JSONReader();
             str.JSONREADER("src/input.json",1);
-            */
     } else {
         System.out.println("Error");
         System.exit(1);
@@ -77,8 +76,8 @@ public class Programm {
             XMLWriter writer = new XMLWriter();
             writer.XMLWRITER("output.xml", "Resualt",Double.toString(res));
         } else if (write == 3) {
-            /*JSONWriter reader = new JSONWriter();
-            reader.JSONWRITER("output.json", 1, Double.toString(res));*/
+            JSONWriter reader = new JSONWriter();
+            reader.JSONWRITER("output.json", "1", Double.toString(res));
         } else {
             System.out.println("Error");
             System.exit(1);
@@ -113,15 +112,13 @@ public class Programm {
                 else if (write == 3)
                     zipArchiving.archiveFile("output.json", "output.zip");
             } else if (archiving == 2) {
-            /*RARArchiving rarArchiving = new RARAchiving();
+            RARArchiving rarArchiving = new RARAchiving();
             if(write == 1)
                 rarArchiving.archiveFileInRar("output.txt","output.rar");
             else if (write == 2)
                 rarArchiving.archiveFileInRar("output.xml","output.rar");
             else if (write == 3)
                 rarArchiving.archiveFileInRar("output.json","output.rar");
-
-             */
             }
         }
     }

@@ -1,4 +1,4 @@
-/*import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,4 +11,4 @@ class JSONWriterTest {
         JSONReader jsonReader = new JSONReader();
         assertEquals("2.0", jsonReader.JSONREADER("test_output.json", "3"));
     }
-}*/
+}

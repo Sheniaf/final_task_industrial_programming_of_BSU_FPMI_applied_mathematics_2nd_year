@@ -1,4 +1,4 @@
-/*import java.io.File;
+import java.io.File;
 import java.io.IOException;
 
 import de.innosystec.unrar.Archive;
@@ -24,4 +24,4 @@ public class RARArchiving {
             e.printStackTrace();
         }
     }
-}*/
+}
