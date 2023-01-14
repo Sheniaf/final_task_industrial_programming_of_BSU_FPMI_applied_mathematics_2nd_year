@@ -2,8 +2,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class TXTWritter {
-    public void TXTWRITER(String string) throws IOException {
-        try(FileWriter fileWriter = new FileWriter("output.txt",false)){
+    public void TXTWRITER(String string, String filename) throws IOException {
+        try(FileWriter fileWriter = new FileWriter(filename,false)){
             fileWriter.write(string);
             fileWriter.flush();
         }
