@@ -25,7 +25,7 @@ public class GUI extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         Container container = this.getContentPane();
-        container.setLayout(new GridLayout(3,6,2,2));
+        container.setLayout(new GridLayout(4,4,2,2));
         container.add(label1);
         ButtonGroup buttonGroup1 = new ButtonGroup();
         buttonGroup1.add(radioButton1);
